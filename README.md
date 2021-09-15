@@ -27,3 +27,4 @@ If some links appear broken, you can feel free to update that link and issue a p
 
 
 ## Datasets:
+1. [SimpleQuestions - Paper](https://arxiv.org/pdf/1506.02075v1.pdf) [Repository](https://github.com/davidgolub/SimpleQA/tree/master/datasets/SimpleQuestions)

@@ -34,15 +34,9 @@ If some links appear broken, you can feel free to update that link and issue a p
 
 ## Datasets:
 1. Datasets for Semantic Parsing
-  1. LC-QuAD [Website](http://lc-quad.sda.tech) / [Repository](https://github.com/AskNowQA/LC-QuAD) - Multi-Hop
-  1. LC-QuAD 2.0 [Website](http://lc-quad.sda.tech) - Multi-Hop
+   1. LC-QuAD [Website](http://lc-quad.sda.tech) / [Repository](https://github.com/AskNowQA/LC-QuAD) - Multi-Hop
+   1. LC-QuAD 2.0 [Website](http://lc-quad.sda.tech) - Multi-Hop
 1. SimpleQuestions [Paper](https://arxiv.org/pdf/1506.02075v1.pdf) / [Repository](https://github.com/davidgolub/SimpleQA/tree/master/datasets/SimpleQuestions)
-
-1. Item 1
-1. Item 2
-1. Item 3
-   1. Item 3a
-   1. Item 3b
 
 
 ## RE Algorithms:

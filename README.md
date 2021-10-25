@@ -33,6 +33,11 @@ If some links appear broken, you can feel free to update that link and issue a p
 4. Wikidata [Website](https://www.wikidata.org/wiki/Wikidata:Main_Page) / [Paper](https://dl.acm.org/doi/pdf/10.1145/2629489)
 
 ## Datasets:
+1. Datasets for Semantic Parsing
+1.1. LC-QuAD [Website](http://lc-quad.sda.tech) / [Repository](https://github.com/AskNowQA/LC-QuAD) - Multi-Hop
+1.2. LC-QuAD 2.0 [Website](http://lc-quad.sda.tech) - Multi-Hop
+
+
 1. SimpleQuestions [Paper](https://arxiv.org/pdf/1506.02075v1.pdf) / [Repository](https://github.com/davidgolub/SimpleQA/tree/master/datasets/SimpleQuestions)
 
 ## RE Algorithms:

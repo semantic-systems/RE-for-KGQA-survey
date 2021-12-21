@@ -32,9 +32,19 @@ If some links appear broken, you can feel free to update that link and issue a p
 4. Wikidata [Website](https://www.wikidata.org/wiki/Wikidata:Main_Page) / [Paper](https://dl.acm.org/doi/pdf/10.1145/2629489)
 
 ## Datasets:
+
+Here is a distribution of some of the most used datasets showing their usage frequency in over 550 papers.
+
+<p align="center">
+   <img src="./figures/research_distribution.png" alt="drawing" width="600"/>
+</p>
+
+
 1. Datasets for Semantic Parsing
-   1. LC-QuAD [Paper](http://lc-quad.sda.tech/static/ISWC2017_paper_152.pdf) [Website](http://lc-quad.sda.tech) / [Repository](https://github.com/AskNowQA/LC-QuAD) - Multi-Hop
-   1. LC-QuAD 2.0 [Paper](http://jens-lehmann.org/files/2019/iswc_lcquad2.pdf) / [Website](http://lc-quad.sda.tech) - Multi-Hop
+   1. LC-QuAD [Paper](http://lc-quad.sda.tech/static/ISWC2017_paper_152.pdf) / [Website](http://lc-quad.sda.tech) / [Repository](https://github.com/AskNowQA/LC-QuAD) 
+   1. LC-QuAD 2.0 [Paper](http://jens-lehmann.org/files/2019/iswc_lcquad2.pdf) / [Website](http://lc-quad.sda.tech)
+   1. ComplexWebQuestions [Paper](https://arxiv.org/pdf/1803.06643.pdf) / [Website](https://www.tau-nlp.org/compwebq) 
+   1. WebQuestionsSP [Paper](https://aclanthology.org/P16-2033.pdf) / [Download](https://www.microsoft.com/en-us/download/details.aspx?id=52763)
 
 1. Datasets for Information Retrieval
    1. SimpleQuestions [Paper](https://arxiv.org/pdf/1506.02075v1.pdf) / [Repository](https://github.com/davidgolub/SimpleQA/tree/master/datasets/SimpleQuestions)

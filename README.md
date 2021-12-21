@@ -2,10 +2,9 @@
 
 Relation Extraction (RE) is the procedure used to detect the relations between various entities in (unstructured/unlabelled) texts. RE is a very actively researched field and there have been a lot of very interesting papers and promising algorithms proposed in the recent years along with a multitude of high quality datasets. 
 
-This repository's goal is to provide as clear an overview as possible of the research conducted in the last few years. 
+This repositories goal is to provide an overview of the current research challenges and how they are adressed. 
 
-If some links appear broken, you can feel free to update that link and issue a pull request.
-(Or you can just notify me, that's fine too.)
+If some links appear broken, you can feel free to update that link and issue a pull request. (Or you can just notify me, that's fine too.)
 
 ## Surveys:
 
@@ -28,7 +27,7 @@ If some links appear broken, you can feel free to update that link and issue a p
 
 ## Knowledge Graphs / Knowledge Bases
 1. DBpedia [Website](https://www.dbpedia.org) / [GitHub](https://github.com/dbpedia/) / [Paper](http://svn.aksw.org/papers/2013/SWJ_DBpedia/public.pdf)
-2. Freebase [Website](https://developers.google.com/freebase) DEPRECATED / [Paper](https://dl.acm.org/doi/10.1145/1376616.1376746)
+2. Freebase [Website](https://developers.google.com/freebase) / DEPRECATED / [Paper](https://dl.acm.org/doi/10.1145/1376616.1376746)
 3. YAGO [Website](https://yago-knowledge.org) / [Latest Release](https://yago-knowledge.org/downloads/yago-4) / [Paper](https://suchanek.name/work/publications/eswc-2020-yago.pdf)
 4. Wikidata [Website](https://www.wikidata.org/wiki/Wikidata:Main_Page) / [Paper](https://dl.acm.org/doi/pdf/10.1145/2629489)
 
@@ -36,7 +35,11 @@ If some links appear broken, you can feel free to update that link and issue a p
 1. Datasets for Semantic Parsing
    1. LC-QuAD [Paper](http://lc-quad.sda.tech/static/ISWC2017_paper_152.pdf) [Website](http://lc-quad.sda.tech) / [Repository](https://github.com/AskNowQA/LC-QuAD) - Multi-Hop
    1. LC-QuAD 2.0 [Paper](http://jens-lehmann.org/files/2019/iswc_lcquad2.pdf) / [Website](http://lc-quad.sda.tech) - Multi-Hop
-1. SimpleQuestions [Paper](https://arxiv.org/pdf/1506.02075v1.pdf) / [Repository](https://github.com/davidgolub/SimpleQA/tree/master/datasets/SimpleQuestions)
 
+1. Datasets for Information Retrieval
+   1. SimpleQuestions [Paper](https://arxiv.org/pdf/1506.02075v1.pdf) / [Repository](https://github.com/davidgolub/SimpleQA/tree/master/datasets/SimpleQuestions)
 
-## RE Algorithms:
+1. Datasets for Reinforcement Learning
+
+## Research Challenges:
+

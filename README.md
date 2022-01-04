@@ -53,18 +53,117 @@ If you created a new dataset or found something missing, please don't hesitate t
    1. SimpleQuestions [Paper](https://arxiv.org/pdf/1506.02075v1.pdf) / [Repository](https://github.com/davidgolub/SimpleQA/tree/master/datasets/SimpleQuestions)
    1. WebQuestions [Paper](https://aclanthology.org/D13-1160.pdf) / [Website](https://nlp.stanford.edu/software/sempre/)
    1. ComplexQuestions (unfortunately, there are 2 datasets with the same name <i>ComplexQuestions</i>)
-      1. ComplexQuestions (a.k.a. <i>CompQ</i>) [Paper](https://aclanthology.org/C16-1236.pdf) / [Repository](https://github.com/JunweiBao/MulCQA/tree/ComplexQuestions)
+      1. ComplexQuestions (sometimes referred to as <i>CompQ</i>) [Paper](https://aclanthology.org/C16-1236.pdf) / [Repository](https://github.com/JunweiBao/MulCQA/tree/ComplexQuestions)
       1. ComplexQuestions [Paper](https://dl.acm.org/doi/10.1145/3038912.3052583) / [Website](https://worksheets.codalab.org/worksheets/0x91d77db37e0a4bbbaeb37b8972f4784f) – Note that the dataset was provided by a different author
    1. MetaQA [Paper](https://arxiv.org/abs/1709.04071) / [Repository](https://github.com/yuyuz/MetaQA)
 
 1. Datasets for Reinforcement Learning
    1. UMLS [Paper](https://dl.acm.org/doi/10.1145/1273496.1273551) / [Repository](https://github.com/shehzaadzd/MINERVA/tree/master/datasets/data_preprocessed/umls) ([MINERVA](https://arxiv.org/abs/1711.05851) Repository)
-   1. NELL-995 [Paper](https://arxiv.org/abs/1707.06690) / [Repository](https://github.com/shehzaadzd/MINERVA/tree/master/datasets/data_preprocessed/nell-995)([MINERVA](https://arxiv.org/abs/1711.05851) Repository)
+   1. NELL-995 [Paper](https://arxiv.org/abs/1707.06690) / [Repository](https://github.com/shehzaadzd/MINERVA/tree/master/datasets/data_preprocessed/nell-995) ([MINERVA](https://arxiv.org/abs/1711.05851) Repository)
+   1. Kinship [Paper](https://dl.acm.org/doi/10.1145/1273496.1273551) / [Repository](https://github.com/shehzaadzd/MINERVA/tree/master/datasets/data_preprocessed/kinship) ([MINERVA](https://arxiv.org/abs/1711.05851) Repository)
+   1. FB15K-237 [Paper (Original FB15K)](https://proceedings.neurips.cc/paper/2013/file/1cecc7a77928ca8133fa24680a88d2f9-Paper.pdf) / [Paper (FB15K-237 Variant)](https://aclanthology.org/D15-1174.pdf) / [Download (FB15K-237)](https://www.microsoft.com/en-us/download/details.aspx?id=52312)
+   1. WN18RR [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/11573) / [Repository](https://github.com/TimDettmers/ConvE/blob/master/WN18RR.tar.gz)
+   1. Countries [Paper](https://www.semanticscholar.org/paper/On-Approximate-Reasoning-Capabilities-of-Low-Rank-Bouchard-Singh/03dfada96b88c741bb26bd4ce7b5ae4232157d37) / [Repository](https://github.com/shehzaadzd/MINERVA/tree/master/datasets/data_preprocessed/countries_S1) ([MINERVA](https://arxiv.org/abs/1711.05851) Repository)
 
 
 1. Datasets for Hybrid KGQA
    1. CommonSenseQA [Paper](https://arxiv.org/abs/1811.00937) / [Website](https://www.tau-nlp.org/commonsenseqa)
    1. OpenBookQA [Paper](https://arxiv.org/abs/1809.02789) / [Website](https://allenai.org/data/open-book-qa)
 
+## Performance Overview per Dataset
+
+When layout out the results of your approach, make sure to be as precise as possible. You would be surprised, how many papers report ambiguous results.
+
+P = Precision
+
+(Definition)
+
+R = Recall
+
+(Definition)
+
+F = F1
+
+(Definition)
+
+RE = Relation Extraction Subtask
+
+*This metric refers solely to the RE subtask, i.e. how well can you find the correct relations. This is different from E2E.*
+
+E2E = End to End
+
+*This metric shows the result of running your algorithm **end to end** on the dataset's test set. End to end means **the whole process** from start to finish.*
+
+<div style="text-align:center">
+
+<div style="display:flex; justify-content:center;">
+
+|      |          QALD-5          | 
+|:----:|:------------------------:|
+| HCqa* | P = 0.7 R = 1.0 F = 0.81 |
+
+</div>
+
+*) Tested only on 10 questions
+
+<div style="display:flex; justify-content:center">
+
+|      |          QALD-6          |
+|:----:|:------------------------:|
+| HCqa** | P = 0.42 R = 0.42 F = 0.52 |
+
+</div>
+
+**) Tested only on 25 questions
+
+<div style="display:flex; justify-content:center">
+
+|       |              QALD-7              |
+|:-----:|:--------------------------------:|
+| SLING | P = 0.57 R = 0.76 F = 0.65   |
+| EARL  | RE = 0.47  |
+| GGNN  | P = 0.2686 R = 0.3179 F = 0.2588  |
+
+</div>
+
+<div style="display:flex; justify-content:center">
+
+|       |              QALD-9              |
+|:-----:|:--------------------------------:|
+| SLING |    P = 0.50 R = 0.64 F = 0.56  |
+
+</div>
+
+<div style="display:flex; justify-content:center">
+
+|       |              LC-QuAD 1           |
+|:-----:|:--------------------------------:|
+| SLING |    P = 0.41 R = 0.44 F = 0.48  |
+| EARL |     RE = 0.36    |
+
+</div>
+
+
+<div style="display:flex; justify-content:center">
+
+|       |              SimpleQuestions    |
+|:-----:|:--------------------------------:|
+| AdvT-MMRD | RE = 0.938 E2E = 0.790 |
+| MLTA  | RE = 0.824  |
+| Question Matching  | RE = 0.9341 |
+| Relation Splitting  | RE = 0.9341 E2E = 0.767 |
+| KSA-BiGRU  | P = 0.867 R = 0.848 F = 0.849 RE = 0.9341 E2E = 0.731 |
+| Alias Matching | RE = 0.8288 |
+
+</div>
+
+
+
+</div>
+
+
+
 ## Research Challenges:
+
+For each solution to a challenge, a short description is provided. If you write a paper, that deals with these challenges, you can create a pull request and add a link to your paper with a short description of the paper. If it fits to no challenge provided here, you may create a new entry and add your paper there. 
 

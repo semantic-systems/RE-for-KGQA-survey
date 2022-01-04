@@ -94,29 +94,22 @@ E2E = End to End
 
 *This metric shows the result of running your algorithm **end to end** on the dataset's test set. End to end means **the whole process** from start to finish.*
 
-<div style="text-align:center">
-
-<div style="display:flex; justify-content:center;">
 
 |      |          QALD-5          | 
 |:----:|:------------------------:|
-| HCqa* | P = 0.7 R = 1.0 F = 0.81 |
+| HCqa* | P = 0.7 <br> R = 1.0 <br> F = 0.81 |
 
-</div>
 
 *) Tested only on 10 questions
 
-<div style="display:flex; justify-content:center">
 
 |      |          QALD-6          |
 |:----:|:------------------------:|
-| HCqa** | P = 0.42 R = 0.42 F = 0.52 |
+| HCqa** | P = 0.42 <br> R = 0.42 <br> F = 0.52 |
 
-</div>
 
 **) Tested only on 25 questions
 
-<div style="display:flex; justify-content:center">
 
 |       |              QALD-7              |
 |:-----:|:--------------------------------:|
@@ -124,27 +117,22 @@ E2E = End to End
 | EARL  | RE = 0.47  |
 | GGNN  | P = 0.2686 R = 0.3179 F = 0.2588  |
 
-</div>
 
-<div style="display:flex; justify-content:center">
 
 |       |              QALD-9              |
 |:-----:|:--------------------------------:|
 | SLING |    P = 0.50 R = 0.64 F = 0.56  |
 
-</div>
 
-<div style="display:flex; justify-content:center">
+
 
 |       |              LC-QuAD 1           |
 |:-----:|:--------------------------------:|
 | SLING |    P = 0.41 R = 0.44 F = 0.48  |
 | EARL |     RE = 0.36    |
 
-</div>
 
 
-<div style="display:flex; justify-content:center">
 
 |       |              SimpleQuestions    |
 |:-----:|:--------------------------------:|
@@ -153,13 +141,7 @@ E2E = End to End
 | Question Matching  | RE = 0.9341 |
 | Relation Splitting  | RE = 0.9341 E2E = 0.767 |
 | KSA-BiGRU  | P = 0.867 R = 0.848 F = 0.849 RE = 0.9341 E2E = 0.731 |
-| Alias Matching | RE = 0.8288 |
-
-</div>
-
-
-
-</div>
+| Alias Matching | RE = 0.8288 E2E = 0.7464 |
 
 
 

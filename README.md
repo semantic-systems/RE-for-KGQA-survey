@@ -72,7 +72,7 @@ If you created a new dataset or found something missing, please don't hesitate t
 
 ## Performance Overview per Dataset
 
-When layout out the results of your approach, make sure to be as precise as possible. You would be surprised, how many papers report ambiguous results.
+When layout out the results of your approach, make sure to be as precise as possible. You would be surprised, how many papers report ambiguous results. If your approach outperforms everyone else for a certain paper, make sure to write it in bold.
 
 P = Precision
 
@@ -105,30 +105,30 @@ E2E = End to End
 
 |      |          QALD-6          |
 |:----:|:------------------------:|
-| HCqa** | P = 0.42 <br> R = 0.42 <br> F = 0.52 |
+| HCqa* | P = 0.42 <br> R = 0.42 <br> F = 0.52 |
 
 
-**) Tested only on 25 questions
+*) Tested only on 25 questions
 
 
 |       |              QALD-7              |
 |:-----:|:--------------------------------:|
-| SLING | P = 0.57 R = 0.76 F = 0.65   |
+| SLING | P = 0.57 <br> R = 0.76 <br> F = 0.65   |
 | EARL  | RE = 0.47  |
-| GGNN  | P = 0.2686 R = 0.3179 F = 0.2588  |
+| GGNN  | P = 0.2686 <br> R = 0.3179 <br> F = 0.2588  |
 
 
 
 |       |              QALD-9              |
 |:-----:|:--------------------------------:|
-| SLING |    P = 0.50 R = 0.64 F = 0.56  |
+| SLING |    P = 0.50 <br> R = 0.64 <br> F = 0.56  |
 
 
 
 
 |       |              LC-QuAD 1           |
 |:-----:|:--------------------------------:|
-| SLING |    P = 0.41 R = 0.44 F = 0.48  |
+| SLING |    P = 0.41 <br> R = 0.44 <br> F = 0.48  |
 | EARL |     RE = 0.36    |
 
 
@@ -136,13 +136,19 @@ E2E = End to End
 
 |       |              SimpleQuestions    |
 |:-----:|:--------------------------------:|
-| AdvT-MMRD | RE = 0.938 E2E = 0.790 |
+| AdvT-MMRD | RE = 0.938 <br> E2E = 0.790 |
 | MLTA  | RE = 0.824  |
 | Question Matching  | RE = 0.9341 |
-| Relation Splitting  | RE = 0.9341 E2E = 0.767 |
-| KSA-BiGRU  | P = 0.867 R = 0.848 F = 0.849 RE = 0.9341 E2E = 0.731 |
-| Alias Matching | RE = 0.8288 E2E = 0.7464 |
+| Relation Splitting  | RE = 0.9341 <br> E2E = 0.767 |
+| KSA-BiGRU  | P = 0.867 <br> R = 0.848 <br> F = 0.849 <br> RE = 0.9341 <br> E2E = 0.731 |
+| Alias Matching | RE = 0.8288 <br> E2E = 0.7464 |
+| Synthetic Data | RE* (unseen domain) = 0.7041 <br> E2E (seen domain) = 0.77 <br> E2E* (unseen domain) = 0.6657 |
+| Transfer Learning with BERT | RE = 0.836 <br> E2E = 0.773 |
+| Retrieve and Re-rank | E2E = 0.797 |
+| HR-BiLSTM | RE = 0.933 E2E = 0.787|
 
+
+*) Average of Micro + Macro
 
 
 ## Research Challenges:

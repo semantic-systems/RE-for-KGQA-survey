@@ -50,7 +50,7 @@ If you created a new dataset or found something missing, please don't hesitate t
    1. CompositionalFreebaseQuestions (CFQ) [Paper](https://arxiv.org/pdf/1912.09713.pdf) / [Repository](https://github.com/google-research/google-research/tree/master/cfq) 
 
 1. Datasets for Information Retrieval
-   1. SimpleQuestions [Paper](https://arxiv.org/pdf/1506.02075v1.pdf) / [Repository](https://github.com/davidgolub/SimpleQA/tree/master/datasets/SimpleQuestions)
+   1. <a name="simplequestions"></a> SimpleQuestions [Paper](https://arxiv.org/pdf/1506.02075v1.pdf) / [Repository](https://github.com/davidgolub/SimpleQA/tree/master/datasets/SimpleQuestions)
    1. WebQuestions [Paper](https://aclanthology.org/D13-1160.pdf) / [Website](https://nlp.stanford.edu/software/sempre/)
    1. ComplexQuestions (unfortunately, there are 2 datasets with the same name <i>ComplexQuestions</i>)
       1. ComplexQuestions (sometimes referred to as <i>CompQ</i>) [Paper](https://aclanthology.org/C16-1236.pdf) / [Repository](https://github.com/JunweiBao/MulCQA/tree/ComplexQuestions)
@@ -88,7 +88,7 @@ F = F1
 
 RE = Relation Extraction Subtask
 
-*This metric refers solely to the RE subtask, i.e. how well can you find the correct relations. This is different from E2E.*
+*This metric refers solely to the RE subtask, i.e. how well can you find the correct relations. This metric is different from E2E.*
 
 E2E = End to End
 
@@ -134,9 +134,9 @@ E2E = End to End
 
 
 
-|       |              SimpleQuestions    |
+|       |              [SimpleQuestions](#simplequestions)    |
 |:-----:|:--------------------------------:|
-| AdvT-MMRD | RE = 0.938 <br> E2E = 0.790 |
+| [AdvT-MMRD (Zhang et al., 2020)](https://ieeexplore.ieee.org/document/9050788) | RE = 0.938 <br> E2E = 0.790 |
 | MLTA  | RE = 0.824  |
 | Question Matching  | RE = 0.9341 |
 | Relation Splitting  | RE = 0.9341 <br> E2E = 0.767 |
@@ -146,10 +146,66 @@ E2E = End to End
 | Transfer Learning with BERT | RE = 0.836 <br> E2E = 0.773 |
 | Retrieve and Re-rank | E2E = 0.797 |
 | HR-BiLSTM | RE = 0.933 E2E = 0.787|
+| Multi-View Matching | RE = 0.9375 |
 
 
 *) Average of Micro + Macro
 
+|       |              SimpleQuestions-Balanced    |
+|:-----:|:--------------------------------:|
+| HR-BiLSTM | RE* (seen) = 0.891 <br> RE*(unseen) = 0.412 <br> RE*(seen+unseen avg.) = 0.673 |
+| Representation Adapter | RE* (seen) = 0.8925 <br> RE*(unseen) = 0.7515 <br> RE*(seen+unseen avg.) = 0.83 |
+
+*) Average of Micro + Macro
+
+
+|       |              WebQuestions           |
+|:-----:|:--------------------------------:|
+| Support Sentences |    P = 0.572 <br> R = 0.396 <br> F = 0.382 <br> E2E = 0.423 |
+| QARDTE | P = 0.512 <br> R = 0.613 <br> F = 0.558 <br> RE = 0.843 |
+| [HybQA (Mohamed et al., 2017)](https://pdfs.semanticscholar.org/f433/54ef2348e4330939ad2dbf90395e925ceb4f.pdf) | F = 0.57 |
+
+|       |              WebQuestionsSP           |
+|:-----:|:--------------------------------:|
+| HR-BiLSTM | RE = 0.8253 |
+| UHOP (w/ HR-BiLSTM) | RE = 0.8260 |
+| OPQL | RE = 0.8540 <br> E2E = 0.519 |
+| Multi-View Matching | RE = 0.8595 |
+
+|       |              WebQuestionsSP-WD   |
+|:-----:|:--------------------------------:|
+| GGNN | P = 0.2686 <br> R = 0.3179 <br> F = 0.2588 |
+
+|       |              Free917           |
+|:-----:|:--------------------------------:|
+| QARDTE | P = 0.683 <br> R = 0.679 <br> F = 0.663 |
+
+
+|       |              ComplexQuestions           |
+|:-----:|:--------------------------------:|
+| HCqa | F = 0.536 |
+
+|       |              MetaQA |
+|:-----:|:--------------------------------:|
+| OPQL | E2E (2-Hop) = 0.885 <br> E2E (3-Hop) = 0.871 |
+| RDAS | E2E (1-Hop) = 0.991 <br> E2E (2-Hop) = 0.97 <br> E2E (3-Hop) = 0.856 |
+| [Incremental Sequence Matching (Lan et al., 2019)](https://ieeexplore.ieee.org/document/8970943) | F = 0.981 <br> E2E (1-Hop) = 0.963 <br> E2E (2-Hop) = 0.991 <br> E2E (3-Hop) = 0.996 |
+
+|       |              PathQuestion ([Paper](https://aclanthology.org/C18-1171/) / [Repository](https://github.com/zmtkeke/IRN))|
+|:-----:|:--------------------------------:|
+| [Incremental Sequence Matching (Lan et al., 2019)](https://ieeexplore.ieee.org/document/8970943) | F = 0.96 <br> E2E = 0.967 |
+
+|       |              MSF |
+|:-----:|:--------------------------------:|
+| OPQL | E2E (2-Hop) = 0.492 <br> E2E (3-Hop) = 0.297 |
+
+
+|       |              NYT |
+|:-----:|:--------------------------------:|
+| Deep RL | F* = 0.778 |
+| ReQuest | F = 0.778 |
+
+*) Average
 
 ## Research Challenges:
 

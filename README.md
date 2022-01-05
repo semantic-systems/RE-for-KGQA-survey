@@ -98,27 +98,27 @@ E2E = End to End
 
 ---
 
-### 1. [QALD-Series](#h_qald)
-### 2. [LC-QuAD](#h_lcquad)
-### 3. [FreebaseQA](#h_freebaseqa)
-### 4. [SimpleQuestion & SQB](#h_simplequestions)
-### 5. [WebQuestion & Derivatives](#h_webquestions)
-### 6. [Free917](#h_free917)
-### 7. [ComplexQuestions](#h_complexquestions)
-### 8. [MetaQA](#h_metaqa)
-### 9. [PathQuestion](#h_pathquestion)
-### 10. [MSF](#h_msf)
-### 11. [NYT](#h_nyt)
-### 12. [CommonsenseQA, OpenbookQA & ComplexWebQuestions](#h_hyb)
-### 13. [Reinforcement Learning Datasets](#h_rl)
-### 14. [KBC](h_kbc)
-### 15. [PQA](h_pqa)
+#### 1. [QALD-Series](#h_qald)
+#### 2. [LC-QuAD](#h_lcquad)
+#### 3. [FreebaseQA](#h_freebaseqa)
+#### 4. [SimpleQuestion & SQB](#h_simplequestions)
+#### 5. [WebQuestion & Derivatives](#h_webquestions)
+#### 6. [Free917](#h_free917)
+#### 7. [ComplexQuestions](#h_complexquestions)
+#### 8. [MetaQA](#h_metaqa)
+#### 9. [PathQuestion](#h_pathquestion)
+#### 10. [MSF](#h_msf)
+#### 11. [NYT](#h_nyt)
+#### 12. [CommonsenseQA, OpenbookQA & ComplexWebQuestions](#h_hyb)
+#### 13. [Reinforcement Learning Datasets](#h_rl)
+#### 14. [KBC](#h_kbc)
+#### 15. [PQA](#h_pqa)
 
 ---
 
 <br>
 
-## <a name="h_qald"></a>QALD-Series
+### <a name="h_qald"></a>QALD-Series
 
 |      |          [QALD-5](#qald)          | 
 |:----:|:------------------------:|
@@ -154,7 +154,7 @@ E2E = End to End
 
 <br>
 
-## <a name="h_lcquad"></a>LC-QuAD
+### <a name="h_lcquad"></a>LC-QuAD
 
 |       |              [LC-QuAD 1](#lcquad1)            |
 |:-----:|:--------------------------------:|
@@ -167,7 +167,7 @@ E2E = End to End
 
 <br>
 
-## <a name="h_freebaseqa"></a>FreebaseQA
+### <a name="h_freebaseqa"></a>FreebaseQA
 
 |       | FreebaseQA ([Paper](https://aclanthology.org/N19-1028/) / [Repository](https://github.com/kelvin-jiang/FreebaseQA) )            |
 |:-----:|:--------------------------------:|
@@ -181,7 +181,7 @@ E2E = End to End
 <br>
 
 
-## <a name="h_simplequestions"></a>SimpleQuestions
+### <a name="h_simplequestions"></a>SimpleQuestions
 
 |       |              [SimpleQuestions](#simplequestions)    |
 |:-----:|:--------------------------------:|
@@ -214,7 +214,7 @@ E2E = End to End
 <br>
 
 
-## <a name="h_webquestions"></a>WebQuestions + Derivatives
+### <a name="h_webquestions"></a>WebQuestions + Derivatives
 
 |       |              [WebQuestions](#webquestions)           |
 |:-----:|:--------------------------------:|
@@ -241,7 +241,7 @@ E2E = End to End
 <br>
 
 
-## <a name="h_free917"></a>Free917
+### <a name="h_free917"></a>Free917
 
 |       |              Free917 ([Original Paper](https://aclanthology.org/P13-1042/) / [Data](https://nlp.stanford.edu/software/sempre/))          |
 |:-----:|:--------------------------------:|
@@ -254,7 +254,7 @@ E2E = End to End
 <br>
 
 
-## <a name="h_complexquestions"></a>ComplexQuestions
+### <a name="h_complexquestions"></a>ComplexQuestions
 
 |       |              [ComplexQuestions](#complexquestions)            |
 |:-----:|:--------------------------------:|
@@ -267,7 +267,7 @@ E2E = End to End
 <br>
 
 
-## <a name="h_metaqa"></a>MetaQA
+### <a name="h_metaqa"></a>MetaQA
 
 |       |              [MetaQA](#metaqa) |
 |:-----:|:--------------------------------:|
@@ -282,7 +282,7 @@ E2E = End to End
 <br>
 
 
-## <a name="h_pathquestion"></a>PathQuestion
+### <a name="h_pathquestion"></a>PathQuestion
 
 |       |              PathQuestion ([Paper](https://aclanthology.org/C18-1171/) / [Repository](https://github.com/zmtkeke/IRN))|
 |:-----:|:--------------------------------:|
@@ -296,7 +296,7 @@ E2E = End to End
 <br>
 
 
-## <a name="h_msf"></a>MSF
+### <a name="h_msf"></a>MSF
 
 |       |              MSF ([Paper](https://openreview.net/pdf?id=SJxstlHFPH) / [Repository](https://github.com/google-research/language/tree/master/language/labs/drkit))|
 |:-----:|:--------------------------------:|
@@ -309,7 +309,7 @@ E2E = End to End
 <br>
 
 
-## <a name="h_nyt"></a>NYT
+### <a name="h_nyt"></a>NYT
 
 |       |              NYT ([Paper](https://link.springer.com/content/pdf/10.1007/978-3-642-15939-8_10.pdf) / [Data](https://iesl.cs.umass.edu/riedel/ecml/)) |
 |:-----:|:--------------------------------:|
@@ -325,7 +325,7 @@ E2E = End to End
 <br>
 
 
-## <a name="h_hyb"></a>Hybrid QA
+### <a name="h_hyb"></a>Hybrid QA
 
 |       |              [ComplexWebQuestions](#complexwebquestions) |
 |:-----:|:--------------------------------:|
@@ -349,7 +349,7 @@ E2E = End to End
 <br>
 
 
-## <a name="h_rl"></a>Reinforcment Learning
+### <a name="h_rl"></a>Reinforcment Learning
 
 |       |              [Kinship](#kinship) |
 |:-----:|:--------------------------------:|
@@ -390,7 +390,7 @@ E2E = End to End
 <br>
 
 
-## <a name="h_kbc"></a>KBC
+### <a name="h_kbc"></a>KBC
 
 |       |              KBC ([Paper](https://arxiv.org/abs/1607.01426) / [Repository](https://rajarshd.github.io/ChainsofReasoning/)) |
 |:-----:|:--------------------------------:|
@@ -405,7 +405,7 @@ E2E = End to End
 <br>
 
 
-## <a name="h_pqa"></a>PQA
+### <a name="h_pqa"></a>PQA
 
 |       |              PQA ([Paper](https://aclanthology.org/D15-1038/) / [Repository](https://worksheets.codalab.org/worksheets/0xfcace41fdeec45f3bc6ddf31107b829f)) |
 |:-----:|:--------------------------------:|
@@ -417,8 +417,6 @@ E2E = End to End
 
 <br>
 
-
-## <a name="h_simplequestions"></a>SimpleQuestions
 
 ## Research Challenges:
 

@@ -94,6 +94,31 @@ E2E = End to End
 
 *This metric shows the result of running your algorithm **end to end** on the dataset's test set. End to end means **the whole process** from start to finish.*
 
+<br>
+
+---
+
+### 1. [QALD-Series](#h_qald)
+### 2. [LC-QuAD](#h_lcquad)
+### 3. [FreebaseQA](#h_freebaseqa)
+### 4. [SimpleQuestion & SQB](#h_simplequestions)
+### 5. [WebQuestion & Derivatives](#h_webquestions)
+### 6. [Free917](#h_free917)
+### 7. [ComplexQuestions](#h_complexquestions)
+### 8. [MetaQA](#h_metaqa)
+### 9. [PathQuestion](#h_pathquestion)
+### 10. [MSF](#h_msf)
+### 11. [NYT](#h_nyt)
+### 12. [CommonsenseQA, OpenbookQA & ComplexWebQuestions](#h_hyb)
+### 13. [Reinforcement Learning Datasets](#h_rl)
+### 14. [KBC](h_kbc)
+### 15. [PQA](h_pqa)
+
+---
+
+<br>
+
+## <a name="h_qald"></a>QALD-Series
 
 |      |          [QALD-5](#qald)          | 
 |:----:|:------------------------:|
@@ -113,7 +138,7 @@ E2E = End to End
 
 |       |              [QALD-7](#qald)               |
 |:-----:|:--------------------------------:|
-| SLING | P = 0.57 <br> R = 0.76 <br> F = 0.65   |
+| [SLING (Mihindukulasooriya et al., 2020)](https://arxiv.org/abs/2009.07726) | P = 0.57 <br> R = 0.76 <br> F = 0.65   |
 | [EARL (Dubey et al., 2018)](https://arxiv.org/abs/1801.03825)  | RE = 0.47  |
 | [GGNN (Sorokin and Gurevych, 2018)](https://aclanthology.org/C18-1280/)  | P = 0.2686 <br> R = 0.3179 <br> F = 0.2588  |
 
@@ -121,20 +146,42 @@ E2E = End to End
 
 |       |              [QALD-9](#qald)               |
 |:-----:|:--------------------------------:|
-| SLING |    P = 0.50 <br> R = 0.64 <br> F = 0.56  |
+| [SLING (Mihindukulasooriya et al., 2020)](https://arxiv.org/abs/2009.07726) |    P = 0.50 <br> R = 0.64 <br> F = 0.56  |
 
+<br>
 
+---
 
+<br>
+
+## <a name="h_lcquad"></a>LC-QuAD
 
 |       |              [LC-QuAD 1](#lcquad1)            |
 |:-----:|:--------------------------------:|
-| SLING |    P = 0.41 <br> R = 0.44 <br> F = 0.48  |
+| [SLING (Mihindukulasooriya et al., 2020)](https://arxiv.org/abs/2009.07726) |    P = 0.41 <br> R = 0.44 <br> F = 0.48  |
 | [EARL (Dubey et al., 2018)](https://arxiv.org/abs/1801.03825) |     RE = 0.36    |
+
+<br>
+
+---
+
+<br>
+
+## <a name="h_freebaseqa"></a>FreebaseQA
 
 |       | FreebaseQA ([Paper](https://aclanthology.org/N19-1028/) / [Repository](https://github.com/kelvin-jiang/FreebaseQA) )            |
 |:-----:|:--------------------------------:|
 | [Retrieve and Re-rank (Wang et al., 2021)](https://aclanthology.org/2021.eacl-main.26/) | E2E = 0.517 |
 
+
+<br>
+
+---
+
+<br>
+
+
+## <a name="h_simplequestions"></a>SimpleQuestions
 
 |       |              [SimpleQuestions](#simplequestions)    |
 |:-----:|:--------------------------------:|
@@ -144,8 +191,8 @@ E2E = End to End
 | [Relation Splitting (Hsiao et al., 2017)](https://aclanthology.org/I17-1098/)  | RE = 0.9341 <br> E2E = 0.767 |
 | [KSA-BiGRU (Zhu et al., 2019)](https://arxiv.org/abs/1912.11668)  | P = 0.867 <br> R = 0.848 <br> F = 0.849 <br> RE = 0.9341 <br> E2E = 0.731 |
 | [Alias Matching (Buzaaba and Amagasa, 2021)](https://link.springer.com/article/10.1007/s42979-020-00421-7) | RE = 0.8288 <br> E2E = 0.7464 |
-| Synthetic Data | RE* (unseen domain) = 0.7041 <br> E2E (seen domain) = 0.77 <br> E2E* (unseen domain) = 0.6657 |
-| Transfer Learning with BERT | RE = 0.836 <br> E2E = 0.773 |
+| [Synthetic Data (Sidiropoulos et al., 2020)](https://arxiv.org/abs/2005.12040) | RE* (unseen domain) = 0.7041 <br> E2E (seen domain) = 0.77 <br> E2E* (unseen domain) = 0.6657 |
+| [Transfer Learning with BERT (Lukovnikov et al., 2020)](https://arxiv.org/abs/2001.11985) | RE = 0.836 <br> E2E = 0.773 |
 | [Retrieve and Re-rank (Wang et al., 2021)](https://aclanthology.org/2021.eacl-main.26/) | E2E = 0.797 |
 | [HR-BiLSTM (Yu et al., 2017)](https://aclanthology.org/P17-1053/) | RE = 0.933 E2E = 0.787|
 | [Multi-View Matching (Yu et al., 2018)](https://arxiv.org/abs/1803.00612) | RE = 0.9375 |
@@ -160,33 +207,67 @@ E2E = End to End
 
 *) Average of Micro + Macro
 
+<br>
+
+---
+
+<br>
+
+
+## <a name="h_webquestions"></a>WebQuestions + Derivatives
 
 |       |              [WebQuestions](#webquestions)           |
 |:-----:|:--------------------------------:|
-| Support Sentences |    P = 0.572 <br> R = 0.396 <br> F = 0.382 <br> E2E = 0.423 |
+| [Support Sentences (Li et al., 2017)](http://ceur-ws.org/Vol-1883/paper_8.pdf) |    P = 0.572 <br> R = 0.396 <br> F = 0.382 <br> E2E = 0.423 |
 | [QARDTE (Zheng et al., 2018)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0205097) | P = 0.512 <br> R = 0.613 <br> F = 0.558 <br> RE = 0.843 |
 | [HybQA (Mohamed et al., 2017)](https://pdfs.semanticscholar.org/f433/54ef2348e4330939ad2dbf90395e925ceb4f.pdf) | F = 0.57 |
 
 |       |              [WebQuestionsSP](webquestionssp)           |
 |:-----:|:--------------------------------:|
 | [HR-BiLSTM (Yu et al., 2017)](https://aclanthology.org/P17-1053/) | RE = 0.8253 |
-| UHOP (w/ HR-BiLSTM) | RE = 0.8260 |
+| [UHOP (Chen et al., 2019)](https://arxiv.org/abs/1904.01246) (w/ HR-BiLSTM) | RE = 0.8260 |
 | [OPQL (Sun et al., 2021)](https://arxiv.org/abs/2102.07043) | RE = 0.8540 <br> E2E = 0.519 |
 | [Multi-View Matching (Yu et al., 2018)](https://arxiv.org/abs/1803.00612) | RE = 0.8595 |
 | [Masking Mechanism (Chen et al., 2018)](https://www.springerprofessional.de/en/relation-extraction-in-knowledge-base-question-answering-from-ge/15917004) | RE = 0.77 |
 
-|       |              WebQuestionsSP-WD   |
+|       |              WebQuestionsSP-WD ([Paper](https://aclanthology.org/C18-1280/) / [Repository](https://github.com/UKPLab/coling2018-graph-neural-networks-question-answering))  |
 |:-----:|:--------------------------------:|
 | [GGNN (Sorokin and Gurevych, 2018)](https://aclanthology.org/C18-1280/) | P = 0.2686 <br> R = 0.3179 <br> F = 0.2588 |
 
-|       |              Free917           |
+<br>
+
+---
+
+<br>
+
+
+## <a name="h_free917"></a>Free917
+
+|       |              Free917 ([Original Paper](https://aclanthology.org/P13-1042/) / [Data](https://nlp.stanford.edu/software/sempre/))          |
 |:-----:|:--------------------------------:|
 | [QARDTE (Zheng et al., 2018)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0205097) | P = 0.683 <br> R = 0.679 <br> F = 0.663 |
 
+<br>
+
+---
+
+<br>
+
+
+## <a name="h_complexquestions"></a>ComplexQuestions
 
 |       |              [ComplexQuestions](#complexquestions)            |
 |:-----:|:--------------------------------:|
 | [HCqa (Asadifar et al., 2019)](https://arxiv.org/abs/1811.10986) | F = 0.536 |
+
+<br>
+
+---
+
+<br>
+
+
+## <a name="h_metaqa"></a>MetaQA
 
 |       |              [MetaQA](#metaqa) |
 |:-----:|:--------------------------------:|
@@ -194,24 +275,57 @@ E2E = End to End
 | [RDAS (Wang et al., 2021)](https://arxiv.org/abs/2104.00218) | E2E (1-Hop) = 0.991 <br> E2E (2-Hop) = 0.97 <br> E2E (3-Hop) = 0.856 |
 | [Incremental Sequence Matching (Lan et al., 2019)](https://ieeexplore.ieee.org/document/8970943) | F = 0.981 <br> E2E (1-Hop) = 0.963 <br> E2E (2-Hop) = 0.991 <br> E2E (3-Hop) = 0.996 |
 
+<br>
+
+---
+
+<br>
+
+
+## <a name="h_pathquestion"></a>PathQuestion
+
 |       |              PathQuestion ([Paper](https://aclanthology.org/C18-1171/) / [Repository](https://github.com/zmtkeke/IRN))|
 |:-----:|:--------------------------------:|
 | [Incremental Sequence Matching (Lan et al., 2019)](https://ieeexplore.ieee.org/document/8970943) | F = 0.96 <br> E2E = 0.967 |
 | [RDAS (Wang et al., 2021)](https://arxiv.org/abs/2104.00218) | E2E (2-Hop) = 0.736 <br> E2E (3-Hop) = 0.910 |
 
-|       |              MSF |
+<br>
+
+---
+
+<br>
+
+
+## <a name="h_msf"></a>MSF
+
+|       |              MSF ([Paper](https://openreview.net/pdf?id=SJxstlHFPH) / [Repository](https://github.com/google-research/language/tree/master/language/labs/drkit))|
 |:-----:|:--------------------------------:|
 | [OPQL (Sun et al., 2021)](https://arxiv.org/abs/2102.07043) | E2E (2-Hop) = 0.492 <br> E2E (3-Hop) = 0.297 |
 
+<br>
 
-|       |              NYT |
+---
+
+<br>
+
+
+## <a name="h_nyt"></a>NYT
+
+|       |              NYT ([Paper](https://link.springer.com/content/pdf/10.1007/978-3-642-15939-8_10.pdf) / [Data](https://iesl.cs.umass.edu/riedel/ecml/)) |
 |:-----:|:--------------------------------:|
 | [Deep RL (Qin et al., 2018)](https://aclanthology.org/P18-1199/) | F* = 0.778 |
 | [ReQuest (Wu et al., 2018)](https://arxiv.org/abs/1710.11169) | P = 0.404 R = 0.48 F = 0.439 |
 
 *) Average
 
+<br>
 
+---
+
+<br>
+
+
+## <a name="h_hyb"></a>Hybrid QA
 
 |       |              [ComplexWebQuestions](#complexwebquestions) |
 |:-----:|:--------------------------------:|
@@ -228,7 +342,14 @@ E2E = End to End
 | [MHGRN (Feng et al., 2020)](https://arxiv.org/abs/2005.00646) | E2E = 0.765 |
 | [QA-GNN (Yasunaga et al., 2021)](https://arxiv.org/abs/2104.06378) | E2E = 0.761 |
 
+<br>
 
+---
+
+<br>
+
+
+## <a name="h_rl"></a>Reinforcment Learning
 
 |       |              [Kinship](#kinship) |
 |:-----:|:--------------------------------:|
@@ -262,17 +383,42 @@ E2E = End to End
 | [MINERVA (Das et al., 2018)](https://arxiv.org/abs/1711.05851) | E2E* = 0.663 |
 | [Reward Shaping (Lin et al., 2018)](https://arxiv.org/abs/1808.10568) | E2E = 0.656 |
 
+<br>
+
+---
+
+<br>
+
+
+## <a name="h_kbc"></a>KBC
+
 |       |              KBC ([Paper](https://arxiv.org/abs/1607.01426) / [Repository](https://rajarshd.github.io/ChainsofReasoning/)) |
 |:-----:|:--------------------------------:|
 | [ROP (Yin et al., 2018)](https://arxiv.org/abs/1806.04523) | E2E* = 0.7616 |
 
 *) Here: the mean average precision
 
+<br>
+
+---
+
+<br>
+
+
+## <a name="h_pqa"></a>PQA
+
 |       |              PQA ([Paper](https://aclanthology.org/D15-1038/) / [Repository](https://worksheets.codalab.org/worksheets/0xfcace41fdeec45f3bc6ddf31107b829f)) |
 |:-----:|:--------------------------------:|
 | [ROP (Yin et al., 2018)](https://arxiv.org/abs/1806.04523) | E2E* = 0.907 |
 
+<br>
 
+---
+
+<br>
+
+
+## <a name="h_simplequestions"></a>SimpleQuestions
 
 ## Research Challenges:
 

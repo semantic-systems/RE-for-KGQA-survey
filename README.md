@@ -420,5 +420,135 @@ E2E = End to End
 
 ## Research Challenges:
 
-For each solution to a challenge, a short description is provided. If you write a paper, that deals with these challenges, you can create a pull request and add a link to your paper with a short description of the paper. If it fits to no challenge provided here, you may create a new entry and add your paper there. 
+For each solution to a challenge, a short description is provided. If you write a paper, that deals with these challenges, you can create a pull request and add a link to your paper with a short description of the paper. If it fits to no challenge provided here, you may create a new entry and add your paper there. Make sure to add a little description of the new challenge that you added.
 
+**Table of Contents**
+
+#### 1. [Lexical Gap](#rc_Lexical_Gap)
+#### 2. [Incomplete Knowledge Graphs](#rc_Incomplete_Knowledge_Graphs)
+#### 3. [Disambiguation Problem](#rc_Disambiguation_Problem"></a>)
+#### 4. [SimpleQuestion & SQB](#h_simplequestions)
+#### 5. [WebQuestion & Derivatives](#h_webquestions)
+#### 6. [Free917](#h_free917)
+#### 7. [ComplexQuestions](#h_complexquestions)
+#### 8. [MetaQA](#h_metaqa)
+#### 9. [PathQuestion](#h_pathquestion)
+#### 10. [MSF](#h_msf)
+#### 11. [NYT](#h_nyt)
+#### 12. [CommonsenseQA, OpenbookQA & ComplexWebQuestions](#h_hyb)
+#### 13. [Reinforcement Learning Datasets](#h_rl)
+#### 14. [KBC](#h_kbc)
+#### 15. [PQA](#h_pqa)
+
+### <a name="rc_Lexical_Gap"></a>Lexical Gap
+
+The lexical gap problems refer to the situation in which the expression of a relation differs in how they are represented in a KB (this problem is also related to the relation linking problem). When faced with the question *where was Angela Merkel born?* the corresponding relation *"birthPlace"* does not appear in the question. This means that exact matching procedures would fail in this situation, requiring the usage of a different, softer matching mechanism.
+
+1. [SLING (Mihindukulasooriya et al., 2020)](https://arxiv.org/abs/2009.07726)
+   - Integrate abstract meaning representation to increase question understanding
+1. [AdvT-MMRD (Zhang et al., 2020)](https://ieeexplore.ieee.org/document/9050788)
+   - Use semantic and literal question-relation matching and incorporate entity type information with adversarial training 
+1. [MLTA (Wang et al., 2019)](https://ieeexplore.ieee.org/document/8684200)
+   - Similarity computation between the question and relation candidates on multiple levels using an attention mechanism 
+1. [Support Sentences (Li et al., 2017)](http://ceur-ws.org/Vol-1883/paper_8.pdf)
+   - Enrich candidate pairs with support sentences from an external source
+1. [Question Matching (Abolghasemi et al., 2020)](https://arxiv.org/abs/2002.07715)
+   - Find the most matching question to the input question
+
+### <a name="rc_Incomplete_Knowledge_Graphs"></a>Incomplete Knowledge Graphs
+
+One of the most known problems in KGQA is that KGs are incomplete [(Min et al., 2013)](https://aclanthology.org/N13-1095.pdf), i.e. certain relations or entities are missing, which is natural considering how vast and complex the body of human knowledge is (and that it keeps growing daily). This problem is especially evident in highly technical and specialised areas. 
+
+1. [OPQL (Sun et al., 2021)](https://arxiv.org/abs/2102.07043)
+   - Construct a virtual knowledge base
+1. [MINERVA (Das et al., 2018)](https://arxiv.org/abs/1711.05851)
+   - Infer missing knowledge using RL
+1. [Reward Shaping (Lin et al., 2018)](https://arxiv.org/abs/1808.10568)
+   - Improve reward mechanism of MINERVA
+1. [ROP (Yin et al., 2018)](https://arxiv.org/abs/1806.04523)
+   - Predict KG paths using an RNN to infer new information
+
+### <a name="rc_Disambiguation_Problem"></a>Disambiguation Problem
+
+A difficult challenge for QA systems to overcome is the ambiguity of natural language. The problem here is, that certain relations may have the same name but a different meaning depending on the context. An example on a KB level (taken from [Hsiao et al., 2017](https://aclanthology.org/I17-1098/)) would be the Freebase relation *genre* which both appears in the context of *film.film.genre* as well as *music.artist.genre*. 
+
+1. [Relation Splitting (Hsiao et al., 2017)](https://aclanthology.org/I17-1098/)
+   - Further split a relation into its type and property
+1. [KSA-BiGRU (Zhu et al., 2019)](https://arxiv.org/abs/1912.11668)
+   - Computing a probability distribution for every relation
+1. [Alias Matching (Buzaaba and Amagasa, 2021)](https://link.springer.com/article/10.1007/s42979-020-00421-7)
+   - Match alias from question with KB and pick most likely relation
+1. [EARL (Dubey et al., 2018)](https://arxiv.org/abs/1801.03825)
+   - Perform entity and relation linking jointly
+1. [HR-BiLSTM (Yu et al., 2017)](https://aclanthology.org/P17-1053/)
+   - Use an hierarchical BiLSTM model and entity re-ranking
+
+### Noise From Distant Supervision
+
+In some domains, training data is sparse and typically involves manual human labour to annotate correctly. This process is, however, very time consuming and therefore not scalable. To overcome this problem, distant supervision (DS) was proposed, which is able to automatically generate training data. The problem with using DS is that the resulting training data can be very noisy, which in turn degrades the model's performance when trained on that data.
+
+1. [ReQuest (Wu et al., 2018)](https://arxiv.org/abs/1710.11169)
+   - Use indirect supervision from external QA corpus
+1. [Deep RL (Qin et al., 2018)](https://aclanthology.org/P18-1199/)
+   - Use a policy-based RL agent to find false positives
+
+### Inclusion of Structured Information From Subgraphs
+
+The main idea of this research challenge is that subgraphs - either generated from the input query or from a KB using the input query - contain useful structural information. This structural information could be leveraged to perform KGQA more accurately.
+
+1. [RDAS (Wang et al., 2021)](https://arxiv.org/abs/2104.00218)
+   - Incorporate information direction within reasoning
+1. [GGNN for SP (Sorokin and Gurevych, 2018)](https://aclanthology.org/C18-1280/)
+   - Integrate the structure of the semantic query
+1. [MHGRN (Feng et al., 2020)](https://arxiv.org/abs/2005.00646)
+   - Capture relations between entities using a Graph Relation Network
+
+### Hybrid Question-Answering
+
+The hybrid QA challenge involves answering question while not only referring to a KB but also use knowledge from external, often natural language textual sources. This can be especially helpful in domains, in which knowledge is not readily available in triplet form. This challenge overlaps with the [Incomplete KG]() challenge.
+
+1. [HCqa (Asadifar et al., 2019)](https://arxiv.org/abs/1811.10986) 
+   - Extract knowledge from text using linguistic patterns
+1. [QARDTE (Zheng et al., 2018)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0205097)
+   - NN with attention mechanism to extract features from unstructured text based on the input question to be used during candidate re-ranking
+1. [HybQA (Mohamed et al., 2017)](https://pdfs.semanticscholar.org/f433/54ef2348e4330939ad2dbf90395e925ceb4f.pdf) 
+   - Filter answers using Wikipedia as external source
+
+### New and Unseen Domains
+
+The authors [(Sidiropoulos et al., 2020)](https://arxiv.org/abs/2005.12040) define an *unseen domain* as a domain for which facts exist in a given KB/KG but are absent within the training data.
+
+1. [Representation Adapter (Wu et al., 2019)](https://aclanthology.org/P19-1616/)
+   - Use an adapter to map from general purpose representations to task specific ones (model-centric) 
+1. [Synthetic Data (Sidiropoulos et al., 2020)](https://arxiv.org/abs/2005.12040)
+   - Generation of synthetic training data (distant supervision) for new, unseen domains (data-centric)
+
+### Integration of Language Models for Relation Extraction
+
+Pre-trained language models have learned knowledge in a more general sense, which means that they can struggle in situations in which structured or factual knowledge is required [(Kassner and Schütze, 2020)](https://aclanthology.org/2020.acl-main.698/). Therefore, using language models alone for KGQA can lead to poor performance. However, leveraging language models with structural information from KGs can lead to better question understanding and increased accuracy [(Yasunaga et al., 2021)](https://arxiv.org/abs/2104.06378).
+
+1. [Transfer Learning with BERT (Lukovnikov et al., 2020)](https://arxiv.org/abs/2001.11985)
+   - Use BERT to predict the relation of the input
+1. [QA-GNN (Yasunaga et al., 2021)](https://arxiv.org/abs/2104.06378) 
+   - Integrate QA context with KG subgraphs
+
+
+### Candidate Generation
+
+Generating a set of relation candidates for an input query can be a very challenging task as it requires finding solutions for different problems such as finding the right candidates and limiting the candidate size. Furthermore, it is necessary to rank the candidates correctly in order to retrieve the correct answer. The following research addresses these problems. 
+
+1. [UHOP (Chen et al., 2019)](https://arxiv.org/abs/1904.01246) 
+   - Lifting the limit of hops without increasing the candidate set's size
+1. [Incremental Sequence Matching (Lan et al., 2019)](https://ieeexplore.ieee.org/document/8970943)
+   - Iterative candidate path generation and pruning
+1. [Retrieve and Re-rank (Wang et al., 2021)](https://aclanthology.org/2021.eacl-main.26/) 
+   - Create an inverted index and create a candidate set using the TF-IDF algorithm and rank the candidates using BERT
+
+### Low Relation Extraction Accuracy
+
+The goal of the following research is to increase the accuracy of RE.
+
+1. [Multi-View Matching (Yu et al., 2018)](https://arxiv.org/abs/1803.00612) 
+   - Match the input question to multiple views from the KG to capture more information
+1. [Masking Mechanism (Chen et al., 2018)](https://www.springerprofessional.de/en/relation-extraction-in-knowledge-base-question-answering-from-ge/15917004) 
+   - Set a hop limit of 2 to hide far away relations, which might be irrelevant

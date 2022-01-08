@@ -122,7 +122,7 @@ E2E = End to End
 
 |      |          [QALD-5](#qald)          | 
 |:----:|:------------------------:|
-| [HCqa (Asadifar et al., 2019)](https://arxiv.org/abs/1811.10986)* | P = 0.7 <br> R = 1.0 <br> F = 0.81 |
+| [HCqa (Asadifar et al., 2019)](https://arxiv.org/abs/1811.10986)* | **P = 0.7** <br> **R = 1.0** <br> **F = 0.81** |
 
 
 *) Tested only on 10 questions
@@ -130,7 +130,7 @@ E2E = End to End
 
 |      |          [QALD-6](#qald)         |
 |:----:|:------------------------:|
-| [HCqa (Asadifar et al., 2019)](https://arxiv.org/abs/1811.10986)* | P = 0.42 <br> R = 0.42 <br> F = 0.52 |
+| [HCqa (Asadifar et al., 2019)](https://arxiv.org/abs/1811.10986)* | **P = 0.42 <br> R = 0.42 <br> F = 0.52** |
 
 
 *) Tested only on 25 questions
@@ -138,15 +138,15 @@ E2E = End to End
 
 |       |              [QALD-7](#qald)               |
 |:-----:|:--------------------------------:|
-| [SLING (Mihindukulasooriya et al., 2020)](https://arxiv.org/abs/2009.07726) | P = 0.57 <br> R = 0.76 <br> F = 0.65   |
-| [EARL (Dubey et al., 2018)](https://arxiv.org/abs/1801.03825)  | RE = 0.47  |
+| [SLING (Mihindukulasooriya et al., 2020)](https://arxiv.org/abs/2009.07726) | **P = 0.57** <br> **R = 0.76** <br> **F = 0.65**   |
+| [EARL (Dubey et al., 2018)](https://arxiv.org/abs/1801.03825)  | **RE = 0.47**  |
 | [GGNN (Sorokin and Gurevych, 2018)](https://aclanthology.org/C18-1280/)  | P = 0.2686 <br> R = 0.3179 <br> F = 0.2588  |
 
 
 
 |       |              [QALD-9](#qald)               |
 |:-----:|:--------------------------------:|
-| [SLING (Mihindukulasooriya et al., 2020)](https://arxiv.org/abs/2009.07726) |    P = 0.50 <br> R = 0.64 <br> F = 0.56  |
+| [SLING (Mihindukulasooriya et al., 2020)](https://arxiv.org/abs/2009.07726) |    **P = 0.50 <br> R = 0.64 <br> F = 0.56**  |
 
 <br>
 
@@ -158,8 +158,8 @@ E2E = End to End
 
 |       |              [LC-QuAD 1](#lcquad1)            |
 |:-----:|:--------------------------------:|
-| [SLING (Mihindukulasooriya et al., 2020)](https://arxiv.org/abs/2009.07726) |    P = 0.41 <br> R = 0.44 <br> F = 0.48  |
-| [EARL (Dubey et al., 2018)](https://arxiv.org/abs/1801.03825) |     RE = 0.36    |
+| [SLING (Mihindukulasooriya et al., 2020)](https://arxiv.org/abs/2009.07726) |    **P = 0.41 <br> R = 0.44 <br> F = 0.48**  |
+| [EARL (Dubey et al., 2018)](https://arxiv.org/abs/1801.03825) |     **RE = 0.36**    |
 
 <br>
 
@@ -171,7 +171,7 @@ E2E = End to End
 
 |       | FreebaseQA ([Paper](https://aclanthology.org/N19-1028/) / [Repository](https://github.com/kelvin-jiang/FreebaseQA) )            |
 |:-----:|:--------------------------------:|
-| [Retrieve and Re-rank (Wang et al., 2021)](https://aclanthology.org/2021.eacl-main.26/) | E2E = 0.517 |
+| [Retrieve and Re-rank (Wang et al., 2021)](https://aclanthology.org/2021.eacl-main.26/) | **E2E = 0.517** |
 
 
 <br>
@@ -191,11 +191,11 @@ E2E = End to End
 | [Relation Splitting (Hsiao et al., 2017)](https://aclanthology.org/I17-1098/)  | RE = 0.9341 <br> E2E = 0.767 |
 | [KSA-BiGRU (Zhu et al., 2019)](https://arxiv.org/abs/1912.11668)  | P = 0.867 <br> R = 0.848 <br> F = 0.849 <br> RE = 0.9341 <br> E2E = 0.731 |
 | [Alias Matching (Buzaaba and Amagasa, 2021)](https://link.springer.com/article/10.1007/s42979-020-00421-7) | RE = 0.8288 <br> E2E = 0.7464 |
-| [Synthetic Data (Sidiropoulos et al., 2020)](https://arxiv.org/abs/2005.12040) | RE* (unseen domain) = 0.7041 <br> E2E (seen domain) = 0.77 <br> E2E* (unseen domain) = 0.6657 |
+| [Synthetic Data (Sidiropoulos et al., 2020)](https://arxiv.org/abs/2005.12040) | **RE* (unseen domain) = 0.7041** <br> E2E (seen domain) = 0.77 <br> **E2E* (unseen domain) = 0.6657** |
 | [Transfer Learning with BERT (Lukovnikov et al., 2020)](https://arxiv.org/abs/2001.11985) | RE = 0.836 <br> E2E = 0.773 |
-| [Retrieve and Re-rank (Wang et al., 2021)](https://aclanthology.org/2021.eacl-main.26/) | E2E = 0.797 |
+| [Retrieve and Re-rank (Wang et al., 2021)](https://aclanthology.org/2021.eacl-main.26/) | **E2E = 0.797** |
 | [HR-BiLSTM (Yu et al., 2017)](https://aclanthology.org/P17-1053/) | RE = 0.933 E2E = 0.787|
-| [Multi-View Matching (Yu et al., 2018)](https://arxiv.org/abs/1803.00612) | RE = 0.9375 |
+| [Multi-View Matching (Yu et al., 2018)](https://arxiv.org/abs/1803.00612) | **RE = 0.9375** |
 
 
 *) Average of Micro + Macro
@@ -566,7 +566,3 @@ The goal of the following research is to increase the accuracy of RE.
    - Match the input question to multiple views from the KG to capture more information
 1. [Masking Mechanism (Chen et al., 2018)](https://www.springerprofessional.de/en/relation-extraction-in-knowledge-base-question-answering-from-ge/15917004) 
    - Set a hop limit of 2 to hide far away relations, which might be irrelevant
-
-
-
-<span style="color:blue">some *blue* text</span>.

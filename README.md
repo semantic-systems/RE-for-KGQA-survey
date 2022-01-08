@@ -202,8 +202,8 @@ This metric shows the result of running your algorithm **end to end** on the dat
 | [AdvT-MMRD (Zhang et al., 2020)](https://ieeexplore.ieee.org/document/9050788) | RE = 0.938 <br> E2E = 0.790 |
 | [MLTA (Wang et al., 2019)](https://ieeexplore.ieee.org/document/8684200)  | RE = 0.824  |
 | [Question Matching (Abolghasemi et al., 2020)](https://arxiv.org/abs/2002.07715) | RE = 0.9341 |
-| [Relation Splitting (Hsiao et al., 2017)](https://aclanthology.org/I17-1098/)  | RE = 0.9341 <br> E2E = 0.767 |
-| [KSA-BiGRU (Zhu et al., 2019)](https://arxiv.org/abs/1912.11668)  | **P = 0.867 <br> R = 0.848 <br> F = 0.849** <br> RE = 0.9341 <br> E2E = 0.731 |
+| [Relation Splitting (Hsiao et al., 2017)](https://aclanthology.org/I17-1098/)  | E2E = 0.767 |
+| [KSA-BiGRU (Zhu et al., 2019)](https://arxiv.org/abs/1912.11668)  | **P = 0.867 <br> R = 0.848 <br> F = 0.849** <br> E2E = 0.731 |
 | [Alias Matching (Buzaaba and Amagasa, 2021)](https://link.springer.com/article/10.1007/s42979-020-00421-7) | RE = 0.8288 <br> E2E = 0.7464 |
 | [Synthetic Data (Sidiropoulos et al., 2020)](https://arxiv.org/abs/2005.12040) | **RE\* (unseen domain) = 0.7041** <br> E2E (seen domain) = 0.77 <br> **E2E\* (unseen domain) = 0.6657** |
 | [Transfer Learning with BERT (Lukovnikov et al., 2020)](https://arxiv.org/abs/2001.11985) | RE = 0.836 <br> E2E = 0.773 |

@@ -426,19 +426,14 @@ For each solution to a challenge, a short description is provided. If you write 
 
 #### 1. [Lexical Gap](#rc_Lexical_Gap)
 #### 2. [Incomplete Knowledge Graphs](#rc_Incomplete_Knowledge_Graphs)
-#### 3. [Disambiguation Problem](#rc_Disambiguation_Problem"></a>)
-#### 4. [SimpleQuestion & SQB](#h_simplequestions)
-#### 5. [WebQuestion & Derivatives](#h_webquestions)
-#### 6. [Free917](#h_free917)
-#### 7. [ComplexQuestions](#h_complexquestions)
-#### 8. [MetaQA](#h_metaqa)
-#### 9. [PathQuestion](#h_pathquestion)
-#### 10. [MSF](#h_msf)
-#### 11. [NYT](#h_nyt)
-#### 12. [CommonsenseQA, OpenbookQA & ComplexWebQuestions](#h_hyb)
-#### 13. [Reinforcement Learning Datasets](#h_rl)
-#### 14. [KBC](#h_kbc)
-#### 15. [PQA](#h_pqa)
+#### 3. [Disambiguation Problem](#rc_Disambiguation_Problem)
+#### 4. [Noise From Distant Supervision](#rc_NoiseFromDistantSupervision)
+#### 5. [Inclusion of Structured Information From Subgraphs](#rc_InclusionOfStructuredInformationFromSubgraphs)
+#### 6. [Hybrid Question-Answering](#rc_HybridQuestionAnswering)
+#### 7. [New and Unseen Domains](#rc_NewAndUnseenDomains)
+#### 8. [Integration of Language Models for Relation Extraction](#rc_IntegrationOfLanguageModelsForRE)
+#### 9. [Candidate Generation](#rc_CandidateGeneration)
+#### 10. [Low Relation Extraction Accuracy](#rc_LowREAccuracy)
 
 ### <a name="rc_Lexical_Gap"></a>Lexical Gap
 
@@ -483,7 +478,7 @@ A difficult challenge for QA systems to overcome is the ambiguity of natural lan
 1. [HR-BiLSTM (Yu et al., 2017)](https://aclanthology.org/P17-1053/)
    - Use an hierarchical BiLSTM model and entity re-ranking
 
-### Noise From Distant Supervision
+### <a name="rc_NoiseFromDistantSupervision"></a> Noise From Distant Supervision
 
 In some domains, training data is sparse and typically involves manual human labour to annotate correctly. This process is, however, very time consuming and therefore not scalable. To overcome this problem, distant supervision (DS) was proposed, which is able to automatically generate training data. The problem with using DS is that the resulting training data can be very noisy, which in turn degrades the model's performance when trained on that data.
 
@@ -492,7 +487,7 @@ In some domains, training data is sparse and typically involves manual human lab
 1. [Deep RL (Qin et al., 2018)](https://aclanthology.org/P18-1199/)
    - Use a policy-based RL agent to find false positives
 
-### Inclusion of Structured Information From Subgraphs
+### <a name="rc_InclusionOfStructuredInformationFromSubgraphs"></a> Inclusion of Structured Information From Subgraphs
 
 The main idea of this research challenge is that subgraphs - either generated from the input query or from a KB using the input query - contain useful structural information. This structural information could be leveraged to perform KGQA more accurately.
 
@@ -503,7 +498,7 @@ The main idea of this research challenge is that subgraphs - either generated fr
 1. [MHGRN (Feng et al., 2020)](https://arxiv.org/abs/2005.00646)
    - Capture relations between entities using a Graph Relation Network
 
-### Hybrid Question-Answering
+### <a name="rc_HybridQuestionAnswering"></a> Hybrid Question-Answering
 
 The hybrid QA challenge involves answering question while not only referring to a KB but also use knowledge from external, often natural language textual sources. This can be especially helpful in domains, in which knowledge is not readily available in triplet form. This challenge overlaps with the [Incomplete KG]() challenge.
 
@@ -514,7 +509,7 @@ The hybrid QA challenge involves answering question while not only referring to 
 1. [HybQA (Mohamed et al., 2017)](https://pdfs.semanticscholar.org/f433/54ef2348e4330939ad2dbf90395e925ceb4f.pdf) 
    - Filter answers using Wikipedia as external source
 
-### New and Unseen Domains
+### <a name="rc_NewAndUnseenDomains"></a> New and Unseen Domains
 
 The authors [(Sidiropoulos et al., 2020)](https://arxiv.org/abs/2005.12040) define an *unseen domain* as a domain for which facts exist in a given KB/KG but are absent within the training data.
 
@@ -523,7 +518,7 @@ The authors [(Sidiropoulos et al., 2020)](https://arxiv.org/abs/2005.12040) defi
 1. [Synthetic Data (Sidiropoulos et al., 2020)](https://arxiv.org/abs/2005.12040)
    - Generation of synthetic training data (distant supervision) for new, unseen domains (data-centric)
 
-### Integration of Language Models for Relation Extraction
+### <a name="rc_IntegrationOfLanguageModelsForRE"></a> Integration of Language Models for Relation Extraction
 
 Pre-trained language models have learned knowledge in a more general sense, which means that they can struggle in situations in which structured or factual knowledge is required [(Kassner and Schütze, 2020)](https://aclanthology.org/2020.acl-main.698/). Therefore, using language models alone for KGQA can lead to poor performance. However, leveraging language models with structural information from KGs can lead to better question understanding and increased accuracy [(Yasunaga et al., 2021)](https://arxiv.org/abs/2104.06378).
 
@@ -533,7 +528,7 @@ Pre-trained language models have learned knowledge in a more general sense, whic
    - Integrate QA context with KG subgraphs
 
 
-### Candidate Generation
+### <a name="rc_CandidateGeneration"></a> Candidate Generation
 
 Generating a set of relation candidates for an input query can be a very challenging task as it requires finding solutions for different problems such as finding the right candidates and limiting the candidate size. Furthermore, it is necessary to rank the candidates correctly in order to retrieve the correct answer. The following research addresses these problems. 
 
@@ -544,7 +539,7 @@ Generating a set of relation candidates for an input query can be a very challen
 1. [Retrieve and Re-rank (Wang et al., 2021)](https://aclanthology.org/2021.eacl-main.26/) 
    - Create an inverted index and create a candidate set using the TF-IDF algorithm and rank the candidates using BERT
 
-### Low Relation Extraction Accuracy
+### <a name="rc_LowREAccuracy"></a> Low Relation Extraction Accuracy
 
 The goal of the following research is to increase the accuracy of RE.
 

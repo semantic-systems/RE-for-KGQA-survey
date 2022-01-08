@@ -435,6 +435,8 @@ For each solution to a challenge, a short description is provided. If you write 
 #### 9. [Candidate Generation](#rc_CandidateGeneration)
 #### 10. [Low Relation Extraction Accuracy](#rc_LowREAccuracy)
 
+<br>
+
 ### <a name="rc_Lexical_Gap"></a>Lexical Gap
 
 The lexical gap problems refer to the situation in which the expression of a relation differs in how they are represented in a KB (this problem is also related to the relation linking problem). When faced with the question *where was Angela Merkel born?* the corresponding relation *"birthPlace"* does not appear in the question. This means that exact matching procedures would fail in this situation, requiring the usage of a different, softer matching mechanism.
@@ -450,6 +452,8 @@ The lexical gap problems refer to the situation in which the expression of a rel
 1. [Question Matching (Abolghasemi et al., 2020)](https://arxiv.org/abs/2002.07715)
    - Find the most matching question to the input question
 
+<br>
+
 ### <a name="rc_Incomplete_Knowledge_Graphs"></a>Incomplete Knowledge Graphs
 
 One of the most known problems in KGQA is that KGs are incomplete [(Min et al., 2013)](https://aclanthology.org/N13-1095.pdf), i.e. certain relations or entities are missing, which is natural considering how vast and complex the body of human knowledge is (and that it keeps growing daily). This problem is especially evident in highly technical and specialised areas. 
@@ -462,6 +466,8 @@ One of the most known problems in KGQA is that KGs are incomplete [(Min et al., 
    - Improve reward mechanism of MINERVA
 1. [ROP (Yin et al., 2018)](https://arxiv.org/abs/1806.04523)
    - Predict KG paths using an RNN to infer new information
+
+<br>
 
 ### <a name="rc_Disambiguation_Problem"></a>Disambiguation Problem
 
@@ -478,6 +484,8 @@ A difficult challenge for QA systems to overcome is the ambiguity of natural lan
 1. [HR-BiLSTM (Yu et al., 2017)](https://aclanthology.org/P17-1053/)
    - Use an hierarchical BiLSTM model and entity re-ranking
 
+<br>
+
 ### <a name="rc_NoiseFromDistantSupervision"></a> Noise From Distant Supervision
 
 In some domains, training data is sparse and typically involves manual human labour to annotate correctly. This process is, however, very time consuming and therefore not scalable. To overcome this problem, distant supervision (DS) was proposed, which is able to automatically generate training data. The problem with using DS is that the resulting training data can be very noisy, which in turn degrades the model's performance when trained on that data.
@@ -486,6 +494,8 @@ In some domains, training data is sparse and typically involves manual human lab
    - Use indirect supervision from external QA corpus
 1. [Deep RL (Qin et al., 2018)](https://aclanthology.org/P18-1199/)
    - Use a policy-based RL agent to find false positives
+
+<br>
 
 ### <a name="rc_InclusionOfStructuredInformationFromSubgraphs"></a> Inclusion of Structured Information From Subgraphs
 
@@ -498,6 +508,8 @@ The main idea of this research challenge is that subgraphs - either generated fr
 1. [MHGRN (Feng et al., 2020)](https://arxiv.org/abs/2005.00646)
    - Capture relations between entities using a Graph Relation Network
 
+<br>
+
 ### <a name="rc_HybridQuestionAnswering"></a> Hybrid Question-Answering
 
 The hybrid QA challenge involves answering question while not only referring to a KB but also use knowledge from external, often natural language textual sources. This can be especially helpful in domains, in which knowledge is not readily available in triplet form. This challenge overlaps with the [Incomplete KG]() challenge.
@@ -509,6 +521,8 @@ The hybrid QA challenge involves answering question while not only referring to 
 1. [HybQA (Mohamed et al., 2017)](https://pdfs.semanticscholar.org/f433/54ef2348e4330939ad2dbf90395e925ceb4f.pdf) 
    - Filter answers using Wikipedia as external source
 
+<br>
+
 ### <a name="rc_NewAndUnseenDomains"></a> New and Unseen Domains
 
 The authors [(Sidiropoulos et al., 2020)](https://arxiv.org/abs/2005.12040) define an *unseen domain* as a domain for which facts exist in a given KB/KG but are absent within the training data.
@@ -517,6 +531,8 @@ The authors [(Sidiropoulos et al., 2020)](https://arxiv.org/abs/2005.12040) defi
    - Use an adapter to map from general purpose representations to task specific ones (model-centric) 
 1. [Synthetic Data (Sidiropoulos et al., 2020)](https://arxiv.org/abs/2005.12040)
    - Generation of synthetic training data (distant supervision) for new, unseen domains (data-centric)
+
+<br>
 
 ### <a name="rc_IntegrationOfLanguageModelsForRE"></a> Integration of Language Models for Relation Extraction
 
@@ -527,6 +543,7 @@ Pre-trained language models have learned knowledge in a more general sense, whic
 1. [QA-GNN (Yasunaga et al., 2021)](https://arxiv.org/abs/2104.06378) 
    - Integrate QA context with KG subgraphs
 
+<br>
 
 ### <a name="rc_CandidateGeneration"></a> Candidate Generation
 
@@ -539,6 +556,8 @@ Generating a set of relation candidates for an input query can be a very challen
 1. [Retrieve and Re-rank (Wang et al., 2021)](https://aclanthology.org/2021.eacl-main.26/) 
    - Create an inverted index and create a candidate set using the TF-IDF algorithm and rank the candidates using BERT
 
+<br>
+
 ### <a name="rc_LowREAccuracy"></a> Low Relation Extraction Accuracy
 
 The goal of the following research is to increase the accuracy of RE.
@@ -547,3 +566,7 @@ The goal of the following research is to increase the accuracy of RE.
    - Match the input question to multiple views from the KG to capture more information
 1. [Masking Mechanism (Chen et al., 2018)](https://www.springerprofessional.de/en/relation-extraction-in-knowledge-base-question-answering-from-ge/15917004) 
    - Set a hop limit of 2 to hide far away relations, which might be irrelevant
+
+
+
+<span style="color:blue">some *blue* text</span>.

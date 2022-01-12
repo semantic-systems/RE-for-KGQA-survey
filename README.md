@@ -54,7 +54,7 @@ If you created a new dataset or found something missing, please don't hesitate t
    1. <a name="webquestions"></a>WebQuestions [Paper](https://aclanthology.org/D13-1160.pdf) / [Website](https://nlp.stanford.edu/software/sempre/)
    1. ComplexQuestions (unfortunately, there are 2 datasets with the same name <i>ComplexQuestions</i>)
       1. <a name="compq"></a>ComplexQuestions (sometimes referred to as <i>CompQ</i>) [Paper](https://aclanthology.org/C16-1236.pdf) / [Repository](https://github.com/JunweiBao/MulCQA/tree/ComplexQuestions)
-      1. <a name="complexquestions"></a>ComplexQuestions [Paper](https://dl.acm.org/doi/10.1145/3038912.3052583) / [Website](https://worksheets.codalab.org/worksheets/0x91d77db37e0a4bbbaeb37b8972f4784f) – Note that the dataset was provided by a different author
+      1. <a name="complexquestions_ds"></a>ComplexQuestions [Paper](https://dl.acm.org/doi/10.1145/3038912.3052583) / [Website](https://worksheets.codalab.org/worksheets/0x91d77db37e0a4bbbaeb37b8972f4784f) – Note that the dataset was provided by a different author
    1. <a name="metaqa"></a>MetaQA [Paper](https://arxiv.org/abs/1709.04071) / [Repository](https://github.com/yuyuz/MetaQA)
 
 1. Datasets for Reinforcement Learning
@@ -270,7 +270,7 @@ This metric shows the result of running your algorithm **end to end** on the dat
 
 ### <a name="h_complexquestions"></a>ComplexQuestions
 
-|       |              [ComplexQuestions](#complexquestions)            |
+|       |              [ComplexQuestions](#complexquestions_ds)            |
 |:-----:|:--------------------------------:|
 | [HCqa (Asadifar et al., 2019)](https://arxiv.org/abs/1811.10986) | **F = 0.536** |
 

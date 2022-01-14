@@ -330,7 +330,7 @@ This metric shows the result of running your algorithm **end to end** on the dat
 |       |              NYT ([Paper](https://link.springer.com/content/pdf/10.1007/978-3-642-15939-8_10.pdf) / [Data](https://iesl.cs.umass.edu/riedel/ecml/)) |
 |:-----:|:--------------------------------:|
 | [Deep RL (Qin et al., 2018)](https://aclanthology.org/P18-1199/) | **F\* = 0.778** |
-| [ReQuest (Wu et al., 2018)](https://arxiv.org/abs/1710.11169) | **P = 0.404 R = 0.48** F = 0.439 |
+| [ReQuest (Wu et al., 2017)](https://arxiv.org/abs/1710.11169) | **P = 0.404 R = 0.48** F = 0.439 |
 
 *) Average
 

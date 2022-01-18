@@ -453,6 +453,12 @@ For each solution to a challenge, a short description is provided. If you write 
 
 <br>
 
+<p align="center">
+   <img src="./figures/Screenshot 2022-01-18 224906.png" alt="drawing" width="600"/>
+</p>
+
+
+
 ### <a name="rc_Lexical_Gap"></a>Lexical Gap
 
 The lexical gap problems refer to the situation in which the expression of a relation differs in how they are represented in a KB (this problem is also related to the relation linking problem). When faced with the question *where was Angela Merkel born?* the corresponding relation *"birthPlace"* does not appear in the question. This means that exact matching procedures would fail in this situation, requiring the usage of a different, softer matching mechanism.

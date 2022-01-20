@@ -454,7 +454,7 @@ For each solution to a challenge, a short description is provided. If you write 
 <br>
 
 <p align="center">
-   <img src="./figures/Screenshot 2022-01-18 224906.png" alt="drawingg" width="600"/>
+   <img src="./figures/rp.png" alt="drawingg" width="600"/>
 </p>
 
 
